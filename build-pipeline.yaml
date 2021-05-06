@@ -118,4 +118,4 @@ spec:
           operator: in
           values: ["Failed"]
       taskRef:
-        name: send-to-slack-channel
+        name: send-to-channel-slack
