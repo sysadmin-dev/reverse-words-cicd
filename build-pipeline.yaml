@@ -119,3 +119,10 @@ spec:
           values: ["Failed"]
       taskRef:
         name: send-to-channel-slack
+      params:
+        - name: token-secret
+          value: token-secret
+        - name: channel
+          value: "C02110EDFL5"
+        - name: message
+          value: "Tests failed"
