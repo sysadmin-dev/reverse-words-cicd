@@ -111,3 +111,11 @@ spec:
         value: "true"
       - name: branch-generate-name
         value: ""
+  finally:
+    - name: notify-test-failure
+      when:
+        - input: $(tasks.test.status)
+          operator: in
+          values: ["Failed"]
+      taskRef:
+        name: send-to-slack-channel
