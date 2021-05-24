@@ -12,5 +12,5 @@ spec:
         - name: RELEASE
           value: Production release
         - $patch: replace
-        image: quay.io/pamelamatun/tekton-reversewords:9963caf2aa7571cea5ac5794820e30e56cf0120b
+        image: quay.io/pamelamatun/tekton-reversewords:637082c98edaff2e3433157aa57dc6a7b53b6921
         name: reverse-words
